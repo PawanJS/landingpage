@@ -1,0 +1,42 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    border-radius: 100px;
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+
+    @include respond(small-phone) {
+      display: block;
+      margin-top: 3rem;
+    }
+  }
+
+  &--cyan {
+    margin-right: 1.5rem;
+    background-color: $btn-cyan;
+    box-shadow: 0 1rem 3rem rgba($btn-cyan, 0.5);
+
+    &:hover {
+      animation: pulse-1 1s infinite;
+    }
+
+    @include respond(small-phone) {
+      margin-right: 0;
+    }
+  }
+
+  &--blue {
+    background-color: $btn-blue;
+    box-shadow: 0 1rem 3rem rgba($btn-blue, 0.5);
+
+    &:hover {
+      animation: pulse-2 1s infinite;
+    }
+  }
+}

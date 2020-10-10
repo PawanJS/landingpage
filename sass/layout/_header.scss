@@ -1,0 +1,10 @@
+.header {
+  padding: 12rem 1rem;
+  background-image: url("../images/bg-header-desktop.png");
+  background-size: cover;
+  background-position: center;
+
+  @include respond(tab-port) {
+    padding: 8rem 3rem;
+  }
+}

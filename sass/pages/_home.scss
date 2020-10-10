@@ -1,0 +1,93 @@
+.section-about {
+  padding: 0 2rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
+  &__left-box {
+    width: 60%;
+    align-self: center;
+  }
+
+  &__img {
+    width: 100%;
+
+    @include respond(tab-land) {
+      margin-top: 8rem;
+    }
+
+    @include respond(tab-port) {
+      margin-top: 0;
+    }
+  }
+
+  &__right-box {
+    margin-left: 10rem;
+
+    @include respond(tab-port) {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+}
+.about-info {
+  padding: 15rem 0 5rem;
+
+  @include respond(tab-port) {
+    padding: 7em 3rem 5rem;
+  }
+
+  @include respond(tab-port) {
+    padding-bottom: 2rem;
+  }
+
+  &__img-box {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.section-features {
+  @include respond(tab-port) {
+    padding: 0 3rem;
+  }
+}
+
+.section-clients {
+  padding: 8rem 1rem;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
+}
+.client {
+  display: flex;
+  justify-content: space-evenly;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
+  &__box {
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
+  }
+}
+.download-app {
+  padding: 0 3rem 10rem;
+
+  @include respond(tab-port) {
+    padding: 0 3rem 5rem;
+  }
+}
